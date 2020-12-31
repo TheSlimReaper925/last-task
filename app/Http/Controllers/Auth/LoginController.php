@@ -48,7 +48,7 @@ class LoginController extends Controller
         return Socialite::driver('github')->redirect();
     }
 
-    public function googleRedirect()
+    public function githubRedirect()
     {
         $user = Socialite::driver('github')->user();
 

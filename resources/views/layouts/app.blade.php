@@ -69,6 +69,11 @@
                                     </form>
                                 </div>
                             </li>
+                            <li>
+                                @if (Auth::user()->isAdmin == 1)
+                                <a href="{{ route('addpost') }}" class="btn btn-primary" title="">add post</a>
+                                @endif
+                            </li>
                         @endguest
                     </ul>
                 </div>
